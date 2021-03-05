@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{CA759DA7-63CD-47C6-9BD1-20B34597FE39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{F5C20A0E-4C24-4A5D-9BF6-AA051161FC86}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConnectFourWinner.Api", "ConnectFourWinner.Api\ConnectFourWinner.Api.csproj", "{3CE99BB8-7F94-4C06-919D-09693F3298DC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConnectFourWinner.Services", "ConnectFourWinner.Services\ConnectFourWinner.Services.csproj", "{5C541AEC-F72F-416A-809B-BBBF5F3B359C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConnectFourWinner.Services.Test", "ConnectFourWinner.Services.Test\ConnectFourWinner.Services.Test.csproj", "{D38FD162-7587-4E45-961F-F31349674AE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConnectFourWinner.Services.Interfaces", "ConnectFourWinner.Services.Interfaces\ConnectFourWinner.Services.Interfaces.csproj", "{45601E3A-7CAD-476E-9D53-DB4A808D38D2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConnectFourWinner.Domain.Entities", "ConnectFourWinner.Domain.Entities\ConnectFourWinner.Domain.Entities.csproj", "{D2EB5C98-A8C1-4C3B-AA9B-928888F0E4AF}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ConnectFourWeb", "ConnectFourWeb\", "{32B588E1-A1DB-45A3-A00D-6353D97C17B6}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_28102"
+		Debug.AspNetCompiler.PhysicalPath = "ConnectFourWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_28102\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_28102"
+		Release.AspNetCompiler.PhysicalPath = "ConnectFourWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_28102\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "28102"
+		SlnRelativePath = "ConnectFourWeb\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CE99BB8-7F94-4C06-919D-09693F3298DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CE99BB8-7F94-4C06-919D-09693F3298DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CE99BB8-7F94-4C06-919D-09693F3298DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CE99BB8-7F94-4C06-919D-09693F3298DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C541AEC-F72F-416A-809B-BBBF5F3B359C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C541AEC-F72F-416A-809B-BBBF5F3B359C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C541AEC-F72F-416A-809B-BBBF5F3B359C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C541AEC-F72F-416A-809B-BBBF5F3B359C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D38FD162-7587-4E45-961F-F31349674AE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D38FD162-7587-4E45-961F-F31349674AE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D38FD162-7587-4E45-961F-F31349674AE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D38FD162-7587-4E45-961F-F31349674AE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45601E3A-7CAD-476E-9D53-DB4A808D38D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45601E3A-7CAD-476E-9D53-DB4A808D38D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45601E3A-7CAD-476E-9D53-DB4A808D38D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45601E3A-7CAD-476E-9D53-DB4A808D38D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2EB5C98-A8C1-4C3B-AA9B-928888F0E4AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2EB5C98-A8C1-4C3B-AA9B-928888F0E4AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2EB5C98-A8C1-4C3B-AA9B-928888F0E4AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2EB5C98-A8C1-4C3B-AA9B-928888F0E4AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32B588E1-A1DB-45A3-A00D-6353D97C17B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32B588E1-A1DB-45A3-A00D-6353D97C17B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32B588E1-A1DB-45A3-A00D-6353D97C17B6}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{32B588E1-A1DB-45A3-A00D-6353D97C17B6}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5C541AEC-F72F-416A-809B-BBBF5F3B359C} = {F5C20A0E-4C24-4A5D-9BF6-AA051161FC86}
+		{D38FD162-7587-4E45-961F-F31349674AE0} = {F5C20A0E-4C24-4A5D-9BF6-AA051161FC86}
+		{45601E3A-7CAD-476E-9D53-DB4A808D38D2} = {F5C20A0E-4C24-4A5D-9BF6-AA051161FC86}
+		{D2EB5C98-A8C1-4C3B-AA9B-928888F0E4AF} = {CA759DA7-63CD-47C6-9BD1-20B34597FE39}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A72A6F62-6ECA-4C0E-92C1-3E482CC903DD}
+	EndGlobalSection
+EndGlobal

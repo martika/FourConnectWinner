@@ -1,0 +1,159 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none; 
+}
+
+.clearfix{
+	float: none ;
+	clear: both; 
+}
+
+#global{
+	width: 65%;
+	margin:0px auto;
+	margin-top:30px;
+	padding: 25px;
+	background: white;
+	box-shadow: 0px 0px 5px black;
+}
+
+#logo{
+	font-family: Verdana, Arial;
+	font-size: 20px;
+	letter-spacing: 4px;
+	line-height: 75px;	
+	color: white;
+	text-align: center;
+	width: 385px;
+	height: 80px;
+	margin-bottom: 20px;
+	float: left;
+	text-transform: uppercase;	
+	background: #1F87C4;	
+}
+
+body{
+	background: #99CCFF;
+	font-family: Arial, Helvetica, sans-serif;	
+}
+
+h2{
+	font-size: 30px;
+	color: #333;	
+	font-family: Helvetica, Arial;	
+}
+
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 1px;
+    border-style: groove;
+    border-color: #1F87C4;
+    border-image: initial;
+    width: 65%;
+}
+
+form input[type="text"]
+{
+	padding:5px;
+	border-radius: 2px;
+	border: 1px solid #ccc;	
+	margin-bottom: 10px;
+	margin-top: 5px;	
+}
+
+form input[type="submit"]
+{	
+	background: #eee;
+	padding: 10px;	
+	border: 1px solid gray;	
+	color:white;
+}
+
+#tableBoard{	
+    /*height: 400px;  */
+    padding: 10px;
+    width: 60%;	    
+}
+
+#board{
+	border: 2px solid #1F87C4; 
+	background: #1F87C4 ;		
+}
+
+.hole{                   
+		width: 50px;
+        height: 50px;                    
+        opacity: 0.8;
+        border: 2px solid #1F87C4;
+        border-radius: 999px;
+       	background: white ;
+ }
+
+footer{
+	font-family: Helvetica, Arial;
+	color: white;
+	height: 47px;
+	background: rgba(51,51,51,0.70);
+	margin:0px auto;
+	width: 65%;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 20px;
+	line-height: 47px;
+}
+
+#form_input{
+	width: 55%;
+	margin-top: 15px;
+	font-family: Helvetica, Arial;
+}
+
+#form_input label{
+	width: 100%;
+	display: block;	
+	margin-top: 5px;
+}
+
+.ui-tooltip {    
+    width: 80px;
+}
+
+#winner{     
+   font-size: 30px;
+   font-weight: bold;
+}
+
+#way{     
+   font-size: 15px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+#errorText{    
+   background: #FFDFDF;
+   color:red;
+   border-radius: 10px; 
+   border: 1px solid red;
+   padding: 5px;
+   width: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

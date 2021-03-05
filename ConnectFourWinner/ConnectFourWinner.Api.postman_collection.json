@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "fa606c64-c144-43a3-9dd5-4f6906af30f9",
+		"name": "ConnectFourWinner.Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/connect-four Success",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"}); \r",
+							"pm.test(\"The response field SolutionType must have the value: A_Winner\", function(){\r",
+							"    pm.expect(pm.response.json().solutionType).to.include(\"A_Winner\");\r",
+							"});\r",
+							"pm.test(\"The response field SolutionType must have the value: Horizontally\", function(){\r",
+							"    pm.expect(pm.response.json().winType).to.include(\"Horizontally\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1429/api/connect-four?input=AXXXXXAXXXXXAXXXXXAXXXXXBBBXXXXXXXXXXXXXXX&width=7&height=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1429",
+					"path": [
+						"api",
+						"connect-four"
+					],
+					"query": [
+						{
+							"key": "input",
+							"value": "AXXXXXAXXXXXAXXXXXAXXXXXBBBXXXXXXXXXXXXXXX"
+						},
+						{
+							"key": "width",
+							"value": "7"
+						},
+						{
+							"key": "height",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/connect-four Bad Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"pm.test(\"The response field userMessage must have the value: Input not match with board size\", function(){\r",
+							"    pm.expect(pm.response.json().userMessage).to.include(\"Input not match with board size\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1429/api/connect-four?input=AAABB&width=7&height=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1429",
+					"path": [
+						"api",
+						"connect-four"
+					],
+					"query": [
+						{
+							"key": "input",
+							"value": "AAABB"
+						},
+						{
+							"key": "width",
+							"value": "7"
+						},
+						{
+							"key": "height",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/connect-four Bad Request Field Required",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"pm.test(\"The response field Input must have the value: required\", function(){        \r",
+							"    pm.expect(pm.response.text()).to.include(\"required\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1429/api/connect-four?input=&width=7&height=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1429",
+					"path": [
+						"api",
+						"connect-four"
+					],
+					"query": [
+						{
+							"key": "input",
+							"value": ""
+						},
+						{
+							"key": "width",
+							"value": "7"
+						},
+						{
+							"key": "height",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	]
+}

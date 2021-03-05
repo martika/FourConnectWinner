@@ -1,0 +1,28 @@
+variables:
+  # https://docs.gitlab.com/ee/ci/variables/predefined_variables.html  
+  
+  VERSION: '0.0.1'
+  PROFILE: 'Release'
+
+image: microsoft/dotnet:latest
+
+stages:
+  - build
+  
+before_script:
+    - "dotnet restore"
+
+build:
+    stage: build  
+    tags:
+    - Windows
+    script:
+    - 'dotnet test --logger trx'
+    - 'dotnet build /t:ReBuild /p:Configuration=Release'
+    rules:
+    # Indicates how the pipeline was triggered. Not execution if merge request
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+      when: never
+    # The branch or tag name for which project is built. Only for protected branches develop y master
+    - if: '$CI_COMMIT_REF_NAME == "master" || $CI_COMMIT_REF_NAME == "develop"'
+      when: always
