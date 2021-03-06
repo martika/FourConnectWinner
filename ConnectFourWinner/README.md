@@ -2,13 +2,15 @@
 
 The objective of this project is find the winner of four-connect game making a complete development including a web and REST service to get the solution.
 The algorith visit every hole of the board and check if this position and the next three form a chain. Check Horizontally, Vertically, Diagonally Right Up, Diagonly Left Up
+
     ^^    ^
-	| \  /      
+    | \  /      
     |  \/  
     |  /\   
     | /  \  
     |/    \  
     X------>
+    
 If there is more than one solution only get the first and return to improve the time. 
 In the worst case (there is no winner or game is ongoing) the algorithm visit every position of the board, so the complexity is quadratic O(NxM) being NxM de size of the board.
 The algorithm requires the size of the board and input to solve the problem.
@@ -20,9 +22,12 @@ The solution was created with DDD Microservice layers
 * Domain entity model 
 * Service with the logic bussiness
 * Web.API REST
+
 There is not Infrastructure project because it was not need database.
-Logger with Serilog extension with sink in file
-Validator implemented with composite pattern
+
+Logger with Serilog extension with sink in file.
+
+Validator implemented with composite pattern.
 
 ### Installation
 
@@ -38,6 +43,7 @@ Web in folder ConnectFourWinner\ConnectFourWeb
 ## Exemples to test
 
 Examples 7x6:
+
 OK:
 ```
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -83,13 +89,17 @@ AXXXXXXAXXXXXXAXXXXXXAXXXXXXBBBXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ## Unit Testing
 
 Test solution with a total coverage of 95%.
+
 Service Test to test the algorithm
+
 Validators tests to validations classes for input
 
 ## Tests Execution 
 
 Unit Tests executed by Visual Studio
+
 Added YAML (.gitlab-ci.yml) file for CI/CD to build and run test in gitlab (Not tested) 
+
 Added Json file (ConnectFourWinner.Api.postman_collection.json) to test API with postman
 
 ## Tools
