@@ -88,13 +88,17 @@ AXXXXXXAXXXXXXAXXXXXXAXXXXXXBBBXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ## Unit Testing
 
 Test solution with a total coverage of 95%.
+
 Service Test to test the algorithm
+
 Validators tests to validations classes for input
 
 ## Tests Execution 
 
 Unit Tests executed by Visual Studio
+
 Added YAML (.gitlab-ci.yml) file for CI/CD to build and run test in gitlab (Not tested) 
+
 Added Json file (ConnectFourWinner.Api.postman_collection.json) to test API with postman
 
 ## Tools
