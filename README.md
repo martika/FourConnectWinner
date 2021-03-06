@@ -24,6 +24,7 @@ The solution was created with DDD Microservice layers
 * Domain entity model 
 * Service with the logic bussiness
 * Web.API REST
+
 There is not Infrastructure project because it was not need database.
 Logger with Serilog extension with sink in file
 Validator implemented with composite pattern
