@@ -2,7 +2,7 @@
 Find the winner of four-connect game making a complete development including a web and REST service to get the solution.
 # Connect Four - Find the winner - Code Challenge
 
-The objective of this project is find the winner of four-connect game making a complete development including a web and REST service to get the solution.
+The objective of this project is to find the winner of four-connect game making a complete development including a web and API REST to get the solution.
 The algorithm visits every hole of the board and checks if this position and the next three form a chain. Checking Horizontally, Vertically, Diagonally Right Up, Diagonly Left Up
 
     ^^    ^
@@ -13,8 +13,8 @@ The algorithm visits every hole of the board and checks if this position and the
     |/    \  
     X------>
 
-If there is more than one solution it only gets the first and return to improve the time. 
-In the worst case (there is no winner or game is ongoing) the algorithm visits every position of the board, so the complexity is quadratic O(NxM) being NxM de size of the board.
+If there is more than one solution it only gets the first and returns to improve the time. 
+In the worst case (there is no winner or game is ongoing) the algorithm visits every position of the board, so the complexity is quadratic O(NxM) being NxM the size of the board.
 The algorithm requires the size of the board and input to solve the problem.
 
 
